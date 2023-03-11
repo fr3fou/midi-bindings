@@ -22,7 +22,6 @@ func main() {
 }
 
 func run() error {
-	// establish a connection to the server
 	conn, err := net.Dial("tcp", ":8080")
 	if err != nil {
 		return err

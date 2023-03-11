@@ -48,7 +48,6 @@ func run() error {
 
 	clients := map[string]net.Conn{}
 
-	// start a goroutine to handle incoming connections
 	c := make(chan string)
 	go func() {
 		for {
